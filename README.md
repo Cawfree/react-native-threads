@@ -56,7 +56,7 @@ like this:
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
-  - Add `import com.reactlibrary.RNThreadPackage;` to the imports at the top of the file
+  - Add `import com.reactnativethreads.RNThreadPackage;` to the imports at the top of the file
   - Add `new RNThreadPackage(mReactNativeHost)` to the list returned by the `getPackages()` method
   - Also note that only the official react native modules are available from your
     threads (vibration, fetch, etc...). To include additional native modules in your
@@ -141,7 +141,7 @@ of your app.  This documentation assumes you have a single thread file called
 `index.thread.js` in your project root.  If your file is named differently or in
 a different location, you can update the documented commands accordingly.
 
-**Note**: If your single thread file is in a different location, the folder structure needs to 
+**Note**: If your single thread file is in a different location, the folder structure needs to
 be replicated under `./ios` and `./android/app/src/main/assets/threads`.
 
 ```
